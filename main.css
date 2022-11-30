@@ -1,0 +1,1080 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.45) ,rgba(4,9,30,0.45)),url(/IMAGES/konrad-wojciechowski-18DqPwhgWag-unsplash.jpg) ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    padding: 1% 6% ;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 3;
+    width: 90%;
+    border-bottom: solid;
+    border-color:#61180e ;
+    border-width: 1px;
+    
+    
+}
+
+nav img {
+    width: 75px;
+    height: 75px;
+    margin-left: -60px;
+    margin-top: -5px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #656979;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #61180e;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+    
+}
+
+.fa-solid{
+    color: white;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+/*-------------------------------------------------main page--------------------------------------------*/
+
+
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+
+#color{
+    color: #792d23;
+    background-color: rgba(256 , 256, 256,0.7);
+    border-radius: 5px;
+    border-style: none;
+    padding:0px 5px;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:  1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #a13a2c;
+    background: #a13a2c;
+    transition: 0.7s;
+}
+
+
+
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width: 800px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background:#a13a2c ; 
+        height:100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .nav-links ul li a{
+        color: white;
+    }
+    
+    nav img{
+        margin-left: -15px;
+    }
+
+    nav .fa{
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul{
+        padding: 10px;
+        
+    }
+    .nav-links ul li {
+        padding-bottom: 10px;
+    }
+
+   
+    .entr h1{
+        font-size: 20px;
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .at-mob{
+        position: relative;
+        margin-bottom: 200px;
+        margin-bottom: 0;
+        
+    }
+
+    .at-mob h2{
+        font-size: 18px;
+    }
+
+    .at-mob h2::after{
+        content: '';
+        width: 50%;
+        height: 2px;
+        background: #61180e;
+        display: block;
+    margin: auto;
+    }
+
+    .atout-col{
+        position: absolute;
+        height: 250px;
+        display: none;
+        
+    }
+
+   
+    
+
+
+
+
+
+}
+
+
+
+
+/*-----------------------------------------------------l'entreprise*---------------------------*/
+
+
+
+.entr{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: top 100px; 
+    
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+
+.entr h1{
+   /* margin-bottom: 40px;*/
+    color: #656979;
+    margin-top: 50px;
+    
+}
+
+.entr h1::after{
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: #61180e;
+    display: block;
+    margin: auto;
+}
+
+.entr h2{
+    color: #656979 ;
+}
+
+
+
+p{
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+
+
+
+.row{
+    margin-top: 4%;
+    /*display: flex;*/
+    justify-content: space-between;
+    
+}
+
+
+.entr-col{
+    
+    background: #ffe7e7;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding : 20px;
+    box-sizing: border-box;
+
+}
+
+.present{
+    background: #ffe7e7;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding : 20px;
+    box-sizing: border-box;
+    margin-top: 4%;
+
+}
+
+
+#prst{
+    color: #656979;
+    font-size: 17px;
+}
+
+
+.atout-col{
+    flex-basis: 25%;
+    background: #ffe7e7;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin-right: 5px;
+    transition: 0.5s;
+
+}
+
+.atout-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.7);
+}
+
+.row h4{
+    margin-bottom: 15px;
+}
+
+#altern{
+    background-color: #bb6c62;
+    color: white;
+}
+
+#altern p{
+    color: white;
+}
+
+
+
+
+
+                         /*slide*/
+
+
+    /* Slideshow container */
+.slideshow-container {
+    position: relative;
+    background: #ffe7e7;
+    height: 300px;
+    border-radius: 10px;
+    
+    
+
+  }
+  @media(min-width: 800px) {
+    .slideshow-container{
+        display: none;
+    }
+    .row{
+        display: flex;
+    }
+    
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 40px;
+    text-align: center;
+  }
+  .myZlides {
+    display: none;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev{
+    position: absolute;
+    left: 0;
+
+  }
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(131, 17, 17, 0.7);
+    color: white;
+  }
+  
+  /* The dot/bullet/indicator container */
+  .dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    display: none;
+    
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  /* Add a background color to the active dot/circle */
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Add an italic font style to all quotes */
+  q {font-style: italic;}
+  
+  /* Add a blue color to the author */
+  .author {color: cornflowerblue;}
+
+
+
+/* prestation*/
+
+
+
+.prestation{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+}
+
+.prestation h1{
+    color: #656979;
+}
+
+.prestation h1::after{
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: #61180e;
+    display: block;
+    margin: auto;
+}
+
+.prest-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.prest-col img{
+   width: ""; 
+   display: block;
+}
+
+#key{
+    
+    float: right;
+    height: 100%;
+}
+
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background:rgba(131, 17, 17, 0.7) ;
+    transition: 0.5s;
+}
+
+
+.layer h4{
+    width:100% ;
+    font-weight: 500;
+    color: white;
+    font-size: 22px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+
+
+}
+
+
+.layer:hover h4{
+    bottom: 79%;
+    opacity: 1;
+}
+
+.layer p{
+    width:100% ;
+    
+    color: white;
+    font-weight: 300;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover p{
+    bottom: 29%;
+    opacity: 1;
+}
+
+
+.pop{
+    color: white;
+    transition: 0.15s;
+}
+
+.pop:hover{
+    background-color: rgba(256 , 256, 256,0.7);
+    color: #61180e;
+    padding: 1px 3px 4px 3px;
+    border-radius: 3px;
+    font-weight: 500;
+    transition: 0.15s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.popup{
+    width: 400px;
+    background: rgb(240, 237, 237);
+    border-radius: 6px;
+    position: fixed;
+    top: -0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    z-index: 3;
+    visibility: hidden;
+    transition: transform 0.7s, top 0.7s;
+}
+
+
+.open-popupOne{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.popup .hero-btn{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #61180e;
+    color: white;
+    outline: none;
+    font-size:18px ;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.container#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.competences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    background-color:rgba(187, 103, 103, 0.9);
+    width: 90%;
+    margin-left: 60px;
+    border-radius: 15px;
+}
+.competences h1{
+    
+    color: white;
+    margin-top: -100px;
+    margin-bottom: 80px;
+    
+}
+
+.competences h1::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #61180e;
+    display: block;
+    margin: auto;
+}
+
+
+
+.image-container{
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(45deg);
+    position: relative;
+    transition: transform .7s;
+    
+}
+
+.image-container span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+    font-size: 10px;
+    color: white;
+
+}
+
+.image-container span img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+}
+
+img.imgcar {
+    width: 216px !important;
+    height: 153px !important;
+    margin-top: 24px;
+    border-radius: 10px;
+}
+
+.imgcar span{
+    font-size: 12px;
+}
+
+
+
+.btn-container{
+    position: relative;
+    width: 137%;
+    top: 48px;
+    
+}
+
+
+.bttn{
+    position: absolute;
+    bottom: -80px;
+    background-color:#61180e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+.bttn:hover{
+    filter: brightness(1.5);
+}
+
+#prev{
+    left: 20%;
+
+}
+
+#next{
+    right: 20%;
+}
+
+span.desc {
+    position: relative;
+    top: 182px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.MOYENS h1{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  .carousel {
+    width: 60vw;
+    height: 100vh;
+    position: relative;
+    left: 20%;
+    
+  }
+  
+  .carousel > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+  }
+  
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 200ms opacity ease-in-out;
+    transition-delay: 200ms;
+    
+    
+  }
+  
+  .slide > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .slide[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+    
+  }
+  
+  .carousel-button {
+    position: absolute;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, .5);
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .1);
+  }
+  
+  .carousel-button:hover,
+  .carousel-button:focus {
+    color: white;
+    background-color: rgba(0, 0, 0, .2);
+  }
+  
+  .carousel-button:focus {
+    outline: 1px solid black;
+  }
+  
+  .carousel-button.prev {
+    left: 1rem;
+  }
+  
+  .carousel-button.next {
+    right: 1rem;
+  }
+
+
+  .realisations{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .realisations::after{
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: #61180e;
+    display: block;
+    margin: auto;
+  }
+
+  .realisations h1{
+    color: #656979;
+  }
+
+ .title{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    position: relative;
+ }
+
+ .title h3{
+    color: #656979;
+ }
+ 
+
+
+
+
+
+
+
+ @media(max-width: 800px){
+    .image-container span img{
+        left: 44px;
+    }
+    
+    img.imgcar{
+        width: 129px !important;
+        height: 111px !important;
+        margin-top: 24px;
+        border-radius: 10px;
+    }
+    
+    
+    .image-container span{
+        /*top: -11px;*/
+        font-size: 9px;
+    }
+    
+    .competences{
+        margin-left: 23px;
+    }
+    .competences h1{
+        font-size: 24px;
+    }
+
+    .prestation h1{
+        font-size: 26px
+    }
+
+    .realisations h1{
+        font-size: 26px
+    }
+ }
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Importing the Roboto font from Google Fonts. */
+@import url("https://fonts.googleapis.com/css?family=Roboto:400");
+
+/* Set font of all elements to 'Roboto' */
+
+
+/* Remove outline of all elements on focus */
+*:focus {
+	outline: 0;
+}
+
+
+.Container h3 {
+	text-align: center;
+}
+
+/* Add styles to 'container' class */
+.Container {
+	padding: 12px 24px 24px 24px;
+	margin: 48px 12px;
+	background: #ffe7e7;
+	border-radius: 4px;
+}
+
+/* Add styles to 'label' selector */
+label {
+	font-size: 0.85em;
+	margin-left: 12px;
+}
+
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text],input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus,input[type=email]:focus, textarea:focus {
+	border: 1px solid rgb(105, 23, 23);
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+	background: #61180e;
+	margin: 0 auto;
+	outline: 0;
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	transition: all ease-in-out 0.1s;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+	background: #61180e;
+	color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+	filter: brightness(1.4);
+}
+
+/* Align items to center of the 'div' with the class 'center' */
+.center {
+	text-align: center;
+}
